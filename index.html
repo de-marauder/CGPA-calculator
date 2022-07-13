@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>CGPA <span>Calculator</span></h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="title">
+            Select Your Courses below
+        </h1>
+
+        <form id="form">
+            <div class="form_group_course">
+                <div class="btn danger">
+                    <button class="remove-btn">X</button>
+                </div>
+                <div class="form_group">
+                    <div>
+                        <label htmlfor="course-code">Course:</label>
+                        <input name="course-code" type="text" placeholder="course code">
+                    </div>
+                </div>
+                <div class="form_group">
+                    <div>
+                        <label htmlfor="course-cu">CU:</label>
+                        <input name="course-cu" type="number" min="0" max="9">
+                    </div>
+                </div>
+                <div class="form_group">
+                    <div>
+                        <label htmlfor="course-grade">Grade:</label>
+                        <select name="course-grade" type="text" placeholder="course grade">
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                            <option value="F">F</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="btn-wrapper">
+            <div class="btn">
+                <button class="add-btn"> Add course</button>
+            </div>
+            <div class="btn submit">
+                <button class="submit-btn">Submit</button>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="result">
+            <h1>
+                Result
+            </h1>
+
+            <table id="result-table" class="result-table">
+                <thead>
+                    <th>Course</th>
+                    <th>CU</th>
+                    <th>Grade</th>
+                    <th>Quality points</th>
+                </thead>
+                
+            </table>
+
+            
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

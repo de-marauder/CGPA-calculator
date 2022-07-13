@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: aquamarine;
+}
+.result h1 {
+    color: chartreuse;
+    text-align: center;
+}
+label {
+    font-weight: 600;
+    color: #333;
+}
+input {
+    width: 120px;
+    padding: .5rem 1rem;
+    border: 0;
+    border-bottom: 2px  solid aquamarine;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.btn.submit{
+    background-color: chartreuse;
+}
+.btn.danger{
+    background-color: red;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateX(50%);
+    transform: translateY(-50%);
+}
+.btn {
+    --btn-width: 160px;
+    --btn-height: 1rem;
+
+    display: grid;
+    place-items: center;
+    background-color: aquamarine;
+    width: var(--btn-width);
+    margin-top: 1rem;
+}
+
+.add-btn, .submit-btn, .remove-btn {
+    width: 90%;
+    height: 90%;
+
+    color: #333;
+    background-color: white;
+    outline: none;
+    border: 0;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    transition: color .5s;
+    transition: background-color .25s;
+}
+.remove-btn {
+    width: fit-content;
+    padding: 10px;
+}
+.add-btn:hover, .submit-btn:hover, .remove-btn:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.btn-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.navbar {
+    background-color: #333;
+    padding: 1rem 0;
+    color: #888;
+}
+
+.title {
+    margin: 2rem 0;
+}
+
+.form_group_course {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem #eee;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form_group {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.form_group > div {
+    margin: 0 0.5rem;
+}
+
+/* .result {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    border-radius: 10px;
+} */
+.result-table {
+    box-shadow: 0 0 1rem #aaa;
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 1rem;
+    margin: 1rem 0 3rem;
+    overflow: hidden;
+}
+
+.result-table thead {
+    background-color: aquamarine;
+}
+.result-table thead th, .result-table tbody td {
+    padding: .5rem;
+    text-align: center;
+}
+
+.result-table tbody tr:nth-of-type(even) {
+    background-color: #aaa;
+}
+.result-table tbody tr:nth-last-child() {
+    font-weight: bold;
+    background-color: chartreuse;
+}
