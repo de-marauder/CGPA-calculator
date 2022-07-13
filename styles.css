@@ -27,6 +27,15 @@ input {
     margin: 0 auto;
     max-width: 1000px;
 }
+.flex {
+    display: flex;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.align-center {
+    align-items: center;
+}
 .btn.submit{
     background-color: chartreuse;
 }
@@ -83,6 +92,17 @@ input {
     padding: 1rem 0;
     color: #888;
 }
+.logo span {
+    color: chartreuse;
+}
+.source a {
+    color: white;
+    font-weight: 600;
+}
+.source:hover a {
+    color: aquamarine;
+}
+
 
 .title {
     margin: 2rem 0;
@@ -108,12 +128,7 @@ input {
     margin: 0 0.5rem;
 }
 
-/* .result {
-    width: 100%;
-    border-collapse: collapse;
-    border-radius: 10px;
-    border-radius: 10px;
-} */
+
 .result-table {
     box-shadow: 0 0 1rem #aaa;
     width: 100%;
